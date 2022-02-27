@@ -1,0 +1,19 @@
+{
+    "name": "izisaurio/json-to-array",
+    "description": "Json file to PHP array",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "izisaurio",
+            "email": "izi.isaac@gmail.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "JsonToArray\\": "lib/"
+        }
+    },
+    "require": {}
+}
