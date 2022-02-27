@@ -13,12 +13,20 @@ use \ArrayAccess;
 class Json implements ArrayAccess
 {
 	/**
-	 * Container
+	 * Data container
 	 *
 	 * @access	public
 	 * @var		array
 	 */
 	public $data;
+
+	/**
+	 * Json file path
+	 *
+	 * @access	public
+	 * @var		array
+	 */
+	public $path;
 
 	/**
 	 * Construct
