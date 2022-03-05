@@ -8,8 +8,7 @@
             "name": "izisaurio",
             "email": "izi.isaac@gmail.com"
         }
-    ],
-    
+    ],    
     "autoload": {
         "psr-4": {
             "JsonToArray\\": "lib/"
