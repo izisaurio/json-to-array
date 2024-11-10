@@ -55,7 +55,7 @@ class Json implements ArrayAccess
 	 * @param	mixed	$key	Array key
 	 * @param	mixed	$value	Array value
 	 */
-	public function offsetSet($key, $value)
+	public function offsetSet($key, $value): void
 	{
 		if (is_null($key)) {
 			$this->data[] = $value;
@@ -71,7 +71,7 @@ class Json implements ArrayAccess
 	 * @param	mixed	$key	Array key
 	 * @return	bool
 	 */
-	public function offsetExists($key)
+	public function offsetExists($key): bool
 	{
 		return isset($this->data[$key]);
 	}
@@ -82,7 +82,7 @@ class Json implements ArrayAccess
 	 * @access	public
 	 * @param	mixed	$key	Array key
 	 */
-	public function offsetUnset($key)
+	public function offsetUnset($key): void
 	{
 		unset($this->data[$key]);
 	}
@@ -94,7 +94,7 @@ class Json implements ArrayAccess
 	 * @param	mixed	$key	Array key
 	 * @return	mixed
 	 */
-	public function offsetGet($key)
+	public function offsetGet($key): mixed
 	{
 		return isset($this->data[$key]) ? $this->data[$key] : null;
 	}
